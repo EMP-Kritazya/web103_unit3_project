@@ -31,7 +31,7 @@ The following **optional** features are implemented:
 
 ## Video Walkthrough
 
-Here's a walkthrough of implemented required features:
+Here's a walkthrough of implemented required features: Link: https://i.imgur.com/VBXauwP.gif
 
 <img src='https://i.imgur.com/VBXauwP.gif' title='Fifa World Cup 2026: Host Stadiums (Walk Through)' width='' alt='Video Walkthrough' />
 
