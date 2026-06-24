@@ -36,7 +36,7 @@ const App = () => {
   return (
     <div className="app">
       <header className="main-header">
-        <h1>UnityGrid Plaza</h1>
+        <h1>FIFA World Cup 2026: Host Cities</h1>
 
         <div className="header-buttons">
           <Link to="/" role="button">
