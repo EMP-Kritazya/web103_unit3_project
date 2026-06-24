@@ -1,10 +1,32 @@
 import React, { useState, useEffect } from 'react'
 import Event from '../components/Event'
+import LocationsAPI from '../services/LocationsAPI'
+import EventsAPI from '../services/EventsAPI'
 import '../css/LocationEvents.css'
 
 const LocationEvents = ({index}) => {
     const [location, setLocation] = useState([])
     const [events, setEvents] = useState([])
+
+    useEffect(() => {
+        (async () => {
+            try {
+                // the route passes the location's id in as `index`
+                const locationData = await LocationsAPI.getLocationById(index)
+                setLocation(locationData)
+
+                // get all events and keep only the ones at this location
+                const allEvents = await EventsAPI.getAllEvents()
+                const locationEvents = allEvents.filter(event =>
+                    event.location_id === index || event.location === index
+                )
+                setEvents(locationEvents)
+            }
+            catch (error) {
+                throw error
+            }
+        }) ()
+    }, [index])
 
     return (
         <div className='location-events'>
