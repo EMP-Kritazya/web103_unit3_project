@@ -1,8 +1,8 @@
-# WEB103 Project 3 - _Name of App Here_
+# WEB103 Project 3 - FIFA WORLDCUP 2026: Host Stadiums
 
 Submitted by: **Kritazya Upreti**
 
-About this web app: **App description here**
+About this web app: **A full-stack web app showcasing the host stadiums of the 2026 FIFA World Cup. Users can browse stadium locations and explore the matches scheduled at each venue, with data served from a custom API backed by a PostgreSQL database.**
 
 Time spent: **11** hours
 
@@ -29,15 +29,11 @@ The following **optional** features are implemented:
 - [-] Events display a countdown showing the time remaining before that event
   - [-] Events appear with different formatting when the event has passed (ex. negative time, indication the event has passed, crossed out, etc.).
 
-The following **additional** features are implemented:
-
-- [ ] List anything else that you added to improve the site's functionality!
-
 ## Video Walkthrough
 
 Here's a walkthrough of implemented required features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://i.imgur.com/VBXauwP.gif' title='Fifa World Cup 2026: Host Stadiums (Walk Through)' width='' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 
@@ -52,7 +48,7 @@ GIF created with Kap
 
 Describe any challenges encountered while building the app or any additional context you'd like to add.
 
-The trickiest part was keeping data aligned across the stack: the location ids in PostgreSQL had to match the route indexes in React and the `location_id` foreign keys on events, so each stadium showed the right matches. I also had to wire the Express controllers and routes to the Render database before the frontend services could pull data through the API.
+> The trickiest part was keeping data aligned across the stack: the location ids in PostgreSQL had to match the route indexes in React and the `location_id` foreign keys on events, so each stadium showed the right matches. I also had to wire the Express controllers and routes to the Render database before the frontend services could pull data through the API.
 
 ## License
 
